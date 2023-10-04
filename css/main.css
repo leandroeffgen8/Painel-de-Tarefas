@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/*
+    font-family: 'Dancing Script', cursive; 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('../images/bg.png') repeat top left;
+    font-family: 'Lato', sans-serif;
+}
+
+.painel{
+    width: 95vw;
+    max-width: 690px;
+    margin: 12vh auto 0;
+    text-align: center;
+}
+
+.painel .alert{
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.painel .alert-danger{
+    color: #721C24;
+    background-color: #F8D7DA;
+}
+
+.painel .alert-sucess{
+    color: #155723;
+    background-color: #D4EDDA;
+}
+
+.painel h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.painel .form-control{
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.painel .form-control input{
+    border: 1px solid #ecebeb;
+    padding: 1rem;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.painel .form-control input:focus{
+    outline: none;
+}
+
+.painel .container-task{
+    visibility: hidden;
+}
+
+.painel .container-task.active{
+    visibility: visible;
+}
+
+.painel .container-task .list-task{
+    margin-bottom: 2rem;
+}
+
+.painel .container-task .list-task .list-task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.painel .container-task .list-task .list-task-item .title{
+    text-align: left;
+    font-size: 0.75rem;
+    color: #666;
+    width: 36vw;
+    margin-right: 10px;
+}
+
+.painel .btn-container{
+    display: flex;
+}
+
+.painel [type='button']{
+    border: 1px solid #ecebeb;
+    padding: 1rem 1.34rem;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.painel .btn-submit{
+    padding: 1rem 2rem;
+    border: 1px solid #ecebeb;
+    cursor: pointer;
+}
+
+
+.painel .btn-clear{
+    border: 0;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: #721C24;
+    background-color: #F8D7DA;
+}
